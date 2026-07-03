@@ -1,0 +1,94 @@
+[build-system]
+requires = [
+    "setuptools>=68",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "allpy"
+version = "0.1.0"
+description = "An all-in-one Python utility library for text, math, image, PDF, audio, video, web, data, file, system, and AI operations."
+
+readme = "README.md"
+requires-python = ">=3.10"
+
+license = { file = "LICENSE" }
+
+authors = [
+    { name = "Lidhin Sanjai V", email = "lidhinoffc@gmail.com" }
+]
+
+keywords = [
+    "python",
+    "allpy",
+    "utilities",
+    "image",
+    "pdf",
+    "audio",
+    "video",
+    "web",
+    "data",
+    "system",
+    "file",
+    "text",
+    "math",
+    "ai",
+    "library"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "Pillow",
+    "opencv-python",
+    "numpy",
+    "pymupdf",
+    "reportlab",
+    "pydub",
+    "moviepy",
+    "requests",
+    "beautifulsoup4",
+    "pandas",
+    "openpyxl",
+    "lxml",
+    "pyyaml",
+    "openai",
+    "ollama",
+    "google-genai",
+    "huggingface_hub"
+]
+
+[project.urls]
+Homepage = "https://github.com/Lidhinoffc/allpy"
+Documentation = "https://github.com/Lidhinoffc/allpy"
+Repository = "https://github.com/Lidhinoffc/allpy"
+Issues = "https://github.com/Lidhinoffc/allpy/issues"
+Changelog = "https://github.com/Lidhinoffc/allpy/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+
+dev = [
+    "pytest",
+    "build",
+    "twine"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
